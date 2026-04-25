@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0d0d0f;
+  --surface: #141416;
+  --panel: #1a1a1e;
+  --accent: #c8f561;
+  --accent2: #61f5c8;
+  --accent3: #f561c8;
+  --text: #f0f0e8;
+  --muted: #6b6b72;
+  --border: #2a2a30;
+  --font-mono: 'Space Mono', monospace;
+  --font-display: 'Syne', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+#root {
+  width: 100%;
+  max-width: 760px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--border);
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent2);
+  cursor: pointer;
+}
+
+select {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+select option {
+  background: var(--surface);
+  color: var(--text);
+}
