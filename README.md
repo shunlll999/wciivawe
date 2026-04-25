@@ -50,3 +50,4 @@ src/
 │   ├── TheoryPanel.jsx        # BPM / Key / Scale / Time Sig UI
 │   └── ChordRow.jsx           # Diatonic chord pills
 ```
+Follow the [DEMO]([http://localhost:3000](https://wciivawe.web.app/)) here Enjoy! 👼🏻
