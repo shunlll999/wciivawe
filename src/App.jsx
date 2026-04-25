@@ -5,6 +5,12 @@ import PianoRoll from './components/PianoRoll';
 import TheoryPanel from './components/TheoryPanel';
 import ChordRow from './components/ChordRow';
 import { detectBPMFromBuffer, buildWaveData, formatTime, TIME_SIGNATURES } from './musicTheory';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import firebaseConfig from './firebaseConfig/config';
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 export default function App() {
   // Audio state
@@ -199,6 +205,13 @@ export default function App() {
   const hasAudio = !!waveData;
 
   return (
+    <><div>
+      <img src='/assets/logo/wachiii-logo.png' width={100} alt='wachiii' />
+      <p style={{
+        fontSize: 11, color: 'var(--muted)', margin: '0.5rem 0 1rem', lineHeight: 1.4,
+       textAlign: 'justify',
+      }}>Welcome to the WCIIVAWE visualizer! This is a web-based application designed to analyze and visualize audio files, providing insights into their musical structure and theory. You can upload your own audio files to see their waveforms, bar grids, piano rolls, and diatonic chords. Explore the theory mode to understand the underlying musical concepts of your tracks. Enjoy experimenting with your music in a whole new way!</p>
+    </div>
     <div style={{
       background: 'var(--bg)',
       borderRadius: 16,
@@ -378,6 +391,10 @@ export default function App() {
       </div>
       <ChordRow rootKey={rootKey} scaleName={scaleName} />
     </div>
+    <p style={{ fontSize: 9, color: 'var(--muted)', textAlign: 'center', marginTop: 16 }}>
+      &copy; 2026 WCIIVAWE. All rights reserved. <strong>WCIIVAWE</strong> is a project by <a href='https://wachiii-dev0.web.app/' target='_blank' rel='noopener noreferrer' style={{ color: 'var(--accent)' }}>wachiii</a> and belongs to <a href='https://wachiii.web.app/' target='_blank' rel='noopener noreferrer' style={{ color: 'var(--accent)' }}>wciibuilder</a>.
+    </p>
+    </>
   );
 }
 
