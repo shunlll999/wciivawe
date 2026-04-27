@@ -22,8 +22,8 @@ npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
+<img width="729" height="888" alt="screen" src="https://github.com/user-attachments/assets/929d7589-1081-4ab1-ad85-ef45ab7e6fc6" />
 
-<img width="672" height="731" alt="Screenshot 2569-04-25 at 22 10 48" src="https://github.com/user-attachments/assets/5d0e75f1-33f3-43fd-9bb2-77e6254164f0" />
 
 
 ## Usage
