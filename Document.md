@@ -38,6 +38,10 @@
 - [CSS Custom Properties](#css-custom-properties)
 
 ---
+Screen Short
+
+<img width="729" height="888" alt="screen" src="https://github.com/user-attachments/assets/d9495480-c7f4-4dc2-b62e-3d1a7c0a6aa0" />
+
 
 ## ความต้องการของระบบ
 
