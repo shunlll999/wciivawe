@@ -23,22 +23,22 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-mono);
-  min-height: 100vh;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   padding: 24px;
+  margin: auto;
 
     background-color:  var(--bg);
     background-image: radial-gradient(circle at center,var(--dot) 1px,var(--bg) 0);
     background-size: 1rem 1rem;
     width: 100vw;
-    height: 100vh;
 }
 
 #root {
   width: 100%;
   max-width: 760px;
+  margin: auto;
 }
 
 input[type="range"] {

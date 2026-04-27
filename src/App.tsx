@@ -151,7 +151,7 @@ export default function App(): ReactElement {
   const timeSig = TIME_SIGNATURES[timeSigIdx] ?? TIME_SIGNATURES[0]!;
 
   return (
-    <Fragment>
+    <div style={{ display: 'block', margin: '0 auto 20px' }}>
   <div>
         <img src='/assets/logo/wachiii-logo.png' width={100} alt='wachiii' />
         <p style={{
@@ -248,7 +248,7 @@ export default function App(): ReactElement {
       <p style={{ fontSize: 9, color: 'var(--muted)', textAlign: 'center', marginTop: 16 }}>
         &copy; 2026 WCIIVAWE. All rights reserved. <strong>WCIIVAWE</strong> is a project by <a href='https://wachiii-dev0.web.app/' target='_blank' rel='noopener noreferrer' style={{ color: 'var(--accent)' }}>wachiii</a> and belongs to <a href='https://wachiii.web.app/' target='_blank' rel='noopener noreferrer' style={{ color: 'var(--accent)' }}>wciibuilder</a>.
       </p>
-    </Fragment>
+    </div>
   );
 }
 
