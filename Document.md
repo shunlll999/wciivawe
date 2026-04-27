@@ -61,7 +61,7 @@ Screen Short
 
 ```bash
 # 1. แตกไฟล์และเข้า directory
-unzip music-visualizer.zip
+unzip wciivawe-master.zip
 cd music-visualizer
 
 # 2. ติดตั้ง dependencies
@@ -208,7 +208,7 @@ Hot cue markers แสดงเป็นเส้นสีบน progress bar
 ## โครงสร้างโปรเจกต์
 
 ```
-music-visualizer/
+wciivawe-master/
 ├── public/
 │   └── index.html
 ├── src/
